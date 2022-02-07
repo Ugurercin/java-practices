@@ -1,12 +1,12 @@
-public class Wall {
+public class Wall_ {
     private double width;
     private double height;
 
-    public Wall() {
+    public Wall_() {
 
     }
 
-    public Wall(double width, double height) {
+    public Wall_(double width, double height) {
         if(width < 0 ) {
             this.width = 0;
         } else {
