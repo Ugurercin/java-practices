@@ -1,21 +1,18 @@
 import java.util.Scanner;
 
 public class SortedArray {
-
-
+    private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         printArray(sortArray(getIntegers(getArraySize())));
     }
 
     public static int getArraySize() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter desired array size:");
         int arraySize = scanner.nextInt();
         return arraySize;
     }
 
     public static int[] getIntegers(int size) {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter values into array: ");
         int[] array = new int[size];
         for(int i = 0; i < size; i++) {
@@ -35,7 +32,6 @@ public class SortedArray {
                 }
             }
         }
-
         return array;
     }
 
